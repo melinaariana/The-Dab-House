@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Challenge - E3</title>
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+            integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/tiny-slider.css" />
+        <script src="https://kit.fontawesome.com/a83280f0d9.js" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <!-- NAV SECTION -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#"><h1 class="logo" href="#">Logo</h1></a>
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarTogglerDemo02"
+                aria-controls="navbarTogglerDemo02"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <form class="form-inline form-nav d-flex align-items-center">
+                    <input class="input-nav" type="search" placeholder="Buscar" />
+                    <button class="btn-input-nav" type="submit"><i class="fas fa-search"></i></button>
+                </form>
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0 ul-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="far fa-heart"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <i class="far fa-user"></i>
+                            <span>Mi cuenta</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link shopping-cart"  href="#"><i class="fas fa-shopping-cart"></i></a>
+                    </li>
+                </ul>
+            </div>
+              </div>
+        </nav>
+
+        <!-- MENU SECTION -->
+        <section class="menu">
+            <div class="container p-0">
+                <div class="col-12 d-none d-sm-none d-md-none d-lg-block p-0">
+                    <ul class="d-flex ul-menu">
+                        <li class="list-unstyled list-menu">
+                            <a class="text-decoration-none text-uppercase link-menu" href="#"><h5>Productos</h5></a>
+                        </li>
+                        <li class="list-unstyled list-menu">
+                            <a class="text-decoration-none link-menu" href="#"><h5>Ofertas</h5></a>
+                        </li>
+                        <li class="list-unstyled list-menu">
+                            <a class="text-decoration-none link-menu" href="#"><h5>Promociones</h5></a>
+                        </li>
+                        <li class="list-unstyled list-menu">
+                            <a class="text-decoration-none link-menu" href="#"><h5>Lanzamientos</h5></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- MAIN SECTION -->
+        <section class="main py-4 mt-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-lg-6">
+                        <div class="slide-gallery" id="autoHeight">
+                            <div>
+                                <div class="slide-item">
+                                    <img src="./Images/cool_mint_device.jpg" alt="Cool minnt 5%" />
+                                </div>
+                            </div>
+                            <div>
+                                <div class="slide-item">
+                                    <img src="./Images/banana_ice_device.jpg" alt="Banana Ice 5%" />
+                                </div>
+                            </div>
+                            <div>
+                                <div class="slide-item">
+                                    <img src="./Images/peach_ice_device.jpg" alt="Peach Ice 5%" />
+                                </div>
+                            </div>
+                            <div>
+                                <div class="slide-item">
+                                    <img src="./Images/watermelon_ice_device.jpg" alt="Watermelon Ice 5%" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex container-gallery">
+                            <img src="./Images/banana_ice_device.jpg" alt="Banana Ice 5%"/>
+                            <img src="./Images/peach_ice_device.jpg" alt="Peach Ice 5%"/>
+                            <img src="./Images/watermelon_ice_device.jpg" alt="Watermelon Ice 5%"/>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6 pt-5 mt-5">
+                        <h1>Myst desechable - Cool mint 5%</h1>
+                        <div class="mb-4">
+                            <p class="mb-0">Precio en un pago</p>
+                            <span class="font-weight-bold price-total">$2.499</span>
+                            <span class="price">$3.890</span>
+                            <span class="price-off">30% OFF</span>
+                        </div>
+                        <div class="mb-5">
+                            <i class="far fa-credit-card"></i>
+                            <span><strong>12</strong> cuotas x <strong>$2.200</strong> </span>
+                            <span><a href="">Ver cuotas y medios de pago</a></span>
+                        </div>
+                        <div class="mb-5 buy-section">
+                            <button class="buy buy-btn py-3"><a id="buy" href="javascript:;" class="btn btn-mini btn-buy">Comprar </a></button>
+
+                            <a class="buy-icons d-inline-block ml-2" href="#"><i class="far fa-heart"></i></a>
+                            <a class="buy-icons d-inline-block ml-2" href="#"><i class="far fa-envelope-open"></i></a>
+                            <div class="alert alert-success mt-2" id="success-alert">
+                                <button type="button" class="close" data-dismiss="alert">x</button>
+                                <strong>¡Éxito! </strong> Agregaste el producto al carrito.
+                            </div>
+                        </div>
+                        <div>
+                            <span class="free-shipping text-center"><p class="free-shipping-text">Envío gratis</p> </span>
+                            <a href="#">Ver zonas disponibles </a>
+                            <span class="d-flex align-items-center justify-content-between pt-3">
+                                <div class="d-flex">
+                                    <img src="./Images/Shape 830.svg" alt="Retiro por sucursal" />
+                                    <div class="pl-3">
+                                        <p class="mb-0"><strong> Retiro GRATIS por sucursal</strong></p>
+                                        <a href="#">Ver sucursales</a>
+                                    </div>
+                                </div>
+                                <div class="d-flex">
+                                    <img src="./Images/Shape 824.svg" alt="Envío a todo el país" />
+                                    <div class="pl-3">
+                                        <p class="mb-0"><strong>Envío a todo el país</strong></p>
+                                        <a href="#">Calcular costo de envío</a>
+                                    </div>
+                                </div>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- DESCRIPTION SECTION -->
+        <section class="description mb-5">
+            <div class="container">
+                <div class="col-12 mt-5">
+                    <div class="d-flex mb-5 justify-content-center justify-content-around">
+                        <h3 class="description-title py-3">Descripción</h3>
+                        <h3 class="py-3">Ficha técnica</h3>
+                    </div>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut libero tincidunt, gravida dui vitae, mattis neque. Vestibulum quis arcu
+                        eget ipsum tempus ornare. Quisque finibus elit nec purus mollis, eu malesuada nibh semper. Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit. In ut libero tincidunt, gravida dui vitae, mattis neque. Vestibulum quis arcu eget ipsum tempus ornare. Quisque finibus
+                        elit nec purus mollis, eu malesuada nibh semper. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut libero tincidunt,
+                        gravida dui vitae, mattis neque. Vestibulum quis arcu eget ipsum tempus ornare. Quisque finibus elit nec purus mollis, eu malesuada nibh
+                        semper. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut libero tincidunt, gravida dui vitae, mattis neque. Vestibulum
+                        quis arcu eget ipsum tempus ornare. Quisque finibus elit nec purus mollis, eu malesuada nibh semper.
+                    </p>
+                    <p>
+                        Ut metus arcu, dignissim a orci quis, faucibus posuere tortor. Quisque quis velit non sem facilisis facilisis. Vivamus eu ipsum sem.
+                        Donec odio diam, venenatis at lectus vitae, imperdiet vestibulum tortor. Aenean in sapien dignissim, tempor felis sed, semper sapien.
+                        Proin malesuada cursus diam, sed aliquam sapien commodo ut. Aenean convallis nisl vel lorem interdum ornare. Phasellus iaculis orci eget
+                        porttitor convallis. Aenean fringilla in tellus at dictum.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- MORE SECTION -->
+        <section class="more pb-5">
+            <div class="container">
+                <div class="slide-wrapper">
+                    <div>
+                        <div class="slide-item pl-3">
+                            <img class="py-5" src="./Images/lemon_grapefruit_device.jpg" alt="Mysc Desechable Lemon Grapefruit 5%" />
+                            <h5>Mysc Desechable Lemon Grapefruit 5%</h5>
+                            <span class="font-weight-bold">$2.499</span>
+                            <span class="price">$3.890</span>
+                            <span class="price-off">30% OFF</span>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="slide-item pl-3">
+                            <img class="py-5" src="./Images/mango_device.jpg" alt="Mysc Desechable Mango 5%" />
+                            <h5>Mysc Desechable Mango 5%</h5>
+                            <span class="font-weight-bold">$2.499</span>
+                            <span class="price">$3.890</span>
+                            <span class="price-off">30% OFF</span>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="slide-item pl-3">
+                            <img class="py-5" src="./Images/banana_ice_device.jpg" alt="Mysc Desechable Banana Ice 5%" />
+                            <h5>Mysc Desechable Banana Ice 5%</h5>
+                            <span class="font-weight-bold">$2.499</span>
+                            <span class="price">$3.890</span>
+                            <span class="price-off">30% OFF</span>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="slide-item pl-3">
+                            <img class="py-5" src="./Images/peach_ice_device.jpg" alt="Mysc Desechable Peach Ice 5%" />
+                            <h5>Mysc Desechable Peach Ice 5%</h5>
+                            <span class="font-weight-bold">$2.499</span>
+                            <span class="price">$3.890</span>
+                            <span class="price-off">30% OFF</span>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="slide-item pl-3">
+                            <img class="py-5" src="./Images/cool_mint_device.jpg" alt="Mysc Desechable Cool Mint 5%" />
+                            <h5>Mysc Desechable Cool Mint 5%</h5>
+                            <span class="font-weight-bold">$2.499</span>
+                            <span class="price">$3.890</span>
+                            <span class="price-off">30% OFF</span>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="slide-item pl-3">
+                            <img class="py-5" src="./Images/watermelon_ice_device.jpg" alt="Mysc Desechable Watermelon Ice 5%" />
+                            <h5>Mysc Desechable Watermelon Ice 5%</h5>
+                            <span class="font-weight-bold">$2.499</span>
+                            <span class="price">$3.890</span>
+                            <span class="price-off">30% OFF</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+        <section class="footer py-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-lg-4 attention text-center mb-5">
+                        <i class="fas fa-phone-alt"></i>
+                        <span>Atención Telefónica</span>
+                        <h4 class="font-weight-bold">0810-333-9470</h4>
+                        <h4 class="font-weight-bold">(0236)4421081</h4>
+                    </div>
+
+                    <div class="col-12 col-lg-4 d-flex justify-content-center justify-content-around mb-5">
+                        <div class="d-flex flex-column">
+                            <h6 class="font-weight-bold text-uppercase">Centro de ayuda</h6>
+                            <a class="text-decoration-none link-footer" href="">Medios de Pago y Envío</a>
+                            <a class="text-decoration-none link-footer" href="">Preguntas frecuentes</a>
+                            <a class="text-decoration-none link-footer" href="">Política de Cambios</a>
+                        </div>
+                        <div class="d-flex flex-column">
+                            <h6 class="font-weight-bold text-uppercase">Insitucional</h6>
+                            <a class="text-decoration-none link-footer" href="">La Empresa</a>
+                            <a class="text-decoration-none link-footer" href="">Sucursales</a>
+                            <a class="text-decoration-none link-footer" href="">Contacto</a>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-lg-4 text-center mb-3">
+                        <h6 class="font-weight-bold text-uppercase">Suscribite</h6>
+                        <p>Recibí en tu email nuestras ofertas e ingresos</p>
+                        <input class="subscription" type="email" placeholder="Email" />
+                        <button class="send-email">Enviar</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="rights-qr">
+            <div class="container">
+                <div class="col-12 d-flex justify-content-around">
+                    <p class="rights">CLIENTE 2020 - Todos los derechos reservados</p>
+                    <img class="qr" src="./Images/qr.png" alt="QR" />
+                </div>
+            </div>
+        </section>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script
+            src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"
+        ></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+
+        <script>
+            var slider = tns({
+                container: '.slide-wrapper',
+                items: 1,
+                responsive: {
+                    640: {
+                        edgePadding: 20,
+                        gutter: 20,
+                        items: 2,
+                    },
+                    700: {
+                        gutter: 30,
+                    },
+                    900: {
+                        items: 5,
+                    },
+                },
+            });
+
+            var slider = tns({
+                container: '#autoHeight',
+                autoHeight: true,
+                items: 1,
+                swipeAngle: false,
+                speed: 400,
+            });
+
+            $(document).ready(function () {
+                $('#success-alert').hide();
+                $('#buy').click(function showAlert() {
+                    $('#success-alert')
+                        .fadeTo(2000, 500)
+                        .slideUp(500, function () {
+                            $('#success-alert').slideUp(500);
+                        });
+                });
+            });
+
+            $(document).ready(function () {
+                $('.buy-btn').on('click', function () {
+                    var $this = $(this);
+                    var loadingText = '<i class="fa fa-circle-o-notch fa-spin"></i> Cargando...';
+                    if ($(this).html() !== loadingText) {
+                        $this.data('original-text', $(this).html());
+                        $this.html(loadingText);
+                    }
+                    setTimeout(function () {
+                        $this.html($this.data('original-text'));
+                    }, 1000);
+                });
+            });
+        </script>
+    </body>
+</html>
